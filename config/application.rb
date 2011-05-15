@@ -1,15 +1,12 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-#require "action_controller/railtie"
-#require "action_mailer/railtie"
-#require "active_resource/railtie"
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-module CafepressWrapper
+module RockclimbingshirtsCom
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -41,18 +38,5 @@ module CafepressWrapper
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-
-    config.action_mailer.delivery_method = :smtp
-
-    config.action_mailer.raise_delivery_errors = true
-
-    ActionMailer::Base.smtp_settings = {
-      :address => "smtp.gmail.com",
-      :authentication => 'plain',
-      :user_name => ENV['GMAIL_SMTP_USER'],
-      :password => ENV['GMAIL_SMTP_PASSWORD'],
-      :enable_starttls_auto => true,
-      :tls => true
-    }
   end
 end

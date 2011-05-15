@@ -1,5 +1,5 @@
-CafepressWrapper::Application.configure do
-  # Settings specified here will take precedence over those in config/environment.rb
+RockclimbingshirtsCom::Application.configure do
+  # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
@@ -22,10 +22,5 @@ CafepressWrapper::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
-
-  config.middleware.use "::ExceptionNotifier" , :email_prefix => "[RCS.com Exception] ",
-                       :sender_address => %{"notifier" <benjamin.lee.smith@gmail.com>},
-                       :exception_recipients => %w{benjamin.lee.smith@gmail.com}
 end
-
 
