@@ -1,0 +1,30 @@
+body {
+	background-image: url(/images/fabric_bg.png);
+}
+
+div#header {
+   border-bottom: 2px solid #96602D;
+   border-left: 2px solid #96602D;
+   border-right: 2px solid #96602D;	
+}
+
+div#content {
+	background-color: #4D5453;
+	border: 2px solid #96602D;
+}
+
+div#content div#cart {
+	background-color: #96602D;
+}
+
+div#content div#cart a:hover {
+	background-color: #96602D;	
+}
+
+div#footer div.menu a {
+	color: #f0f0f0;
+}
+
+#products a:hover {
+	border: 2px solid #DBAE5E;
+}
