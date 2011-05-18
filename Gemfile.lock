@@ -31,7 +31,7 @@ GEM
     arel (2.0.9)
     builder (2.1.2)
     cafepress_api (0.3.2)
-    cafepress_wrapper (0.0.3)
+    cafepress_wrapper (0.0.6)
       cafepress_api (~> 0.3.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -72,6 +72,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cafepress_wrapper (= 0.0.3)
+  cafepress_wrapper (= 0.0.6)
   pg
   rails (= 3.0.7)
