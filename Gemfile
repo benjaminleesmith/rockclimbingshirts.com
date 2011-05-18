@@ -30,4 +30,4 @@ gem 'pg'
 #   gem 'webrat'
 # end
 
-gem 'cafepress_wrapper', '0.0.6'
+gem 'cafepress_wrapper', '0.1.0'
